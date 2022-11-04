@@ -1,12 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<style>
+
+.menu {
+   
+    background-color: rgb(0, 153, 173);
+    border-radius: 10px;
+    padding: 200px;
+    width: 500px;
+    margin:auto;
+    
+}
+
+.nse {
+
+    display: flex;
+    flex-direction: column;
+    border: none;
+    
+
+
+}
+
+.nse input{
+
+    margin-top: 10px;
+
+    padding:0 5px;
+
+    background-color: transparent;
+
+    border:none;
+
+    border-bottom: 1px solid #e1e1e1;
+
+    outline: none;
+
+    color: rgb(0, 0, 0);
+}
+
+.nse input::placeholder{
+
+    color: rgba(255, 255, 255, 0.788);
+
+}
+
+.titulo {
+
+    width: auto;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.tecnologias {
+
+    padding: 20px;
+
+}
+
+.radios {
+
+    padding: 20px;
+
+}
+
+
+
+
+</style>
+
+
 </head>
 <body>
+
+<div class="menu">
+    <div class="titulo">
+    <h1>Cadastro de DEVs</h1>
+    <p>Complete suas informações</p>
+    </div>
+
+
+    <div class="nse">
+
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" placeholder="Insira seu nome" class="nome">
+    
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" placeholder="Insira seu sobrenome" class="sobrenome">
+    
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="Insira seu E-mail" class="email">
+
+    </div>
+   
+
+    <form class="radios">
+
+        <p>De qual lado voce desenvolve:</p>
+
+       <input name="radio" type="radio" id="front-end"  value="frontend">
+       <label for="front-end">Front-End</label><br>
+
+       <input name="radio" type="radio" id="back-end"  value="Backend">
+       <label for="back-end">Back-End</label><br>
+
+       <input name="radio" type="radio" id="javascript" value="fullstack">
+       <label for="javascript">Fullstack</label>
+
+    </form>
+
+
+
+    <div class="area-senhoridade">
+
+        <label for="senhoridade">Senhoridade </label>
+ 
+        <select name="senhoridade">
+
+            <option value="select" selected disabled hidden>Selecione</option>
+            <option value="junior">Júnior</option>
+            <option value="pleno">Pleno</option>
+            <option value="senior">Sênior</option>
+
+        </select>
+
+    </div>
+   
+
+    <div class="tecnologias">
+        
+        <input type="checkbox" value="HTML">
+        <Label for="checkbox">HTML</Label>
+
+        <input type="checkbox" value="css">
+        <Label for="checkbox">CSS</Label>
+
+        <input type="checkbox" value="javascript">
+        <Label for="checkbox">javascript</Label>
+
+        <input type="checkbox" value="php">
+        <Label for="checkbox">PHP</Label>
+
+        <input type="checkbox" value="c#">
+        <Label for="checkbox">C#</Label>
+        
+        <input type="checkbox" value="python">
+        <Label for="checkbox">Python</Label>
+
+        <input type="checkbox" value="java">
+        <Label for="checkbox">Java</Label>
+
+    </div>
+
+    <div class="experience">
+
+        <p>Conte nos um pouco da sua experiência:</p>
+
+        <textarea class="text-area" name="#" rows="4" cols="50" placeholder="Digite Aqui"></textarea>
+
+    </div>
+
+</div>
+
     
 </body>
 </html>
